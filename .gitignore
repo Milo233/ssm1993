@@ -21,6 +21,8 @@
 
 /classes/
 
+*.class
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
