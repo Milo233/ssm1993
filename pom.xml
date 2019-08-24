@@ -144,6 +144,7 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>${junit.version}</version>
+      <scope>test</scope>
     </dependency>
     <!--单元测试end-->
 
@@ -162,6 +163,15 @@
       <version>1.0.29</version>
     </dependency>
     <!--druid end-->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.0.1</version>
+      <scope>provided</scope>
+      <!--含义：被依赖项目理论上可以参与编译、测试、运行等阶段，相当于compile，但是再打包阶段做了exclude的动作。
+      这个servlet-api 应用服务器会提供，线上不需要
+      -->
+    </dependency>
   </dependencies>
 
 

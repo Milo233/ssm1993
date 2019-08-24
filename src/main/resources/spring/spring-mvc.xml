@@ -7,6 +7,10 @@
     <!-- 注解的支持，可以将请求参数绑定到控制器参数-->
     <mvc:annotation-driven/>
 
+    <bean id="configUtils" class="com.milo.utils.ConfigUtils">
+        <constructor-arg value="/properties/config.properties"/>
+    </bean>
+
     <!--注解扫描-->
     <context:component-scan base-package="com.milo.controller"/>
     <context:component-scan base-package="com.milo.serviceImpl"/>
